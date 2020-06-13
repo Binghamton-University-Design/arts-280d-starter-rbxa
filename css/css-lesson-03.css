@@ -1,0 +1,60 @@
+/*stylesheet*/
+/*save #65da65 #c8dcde */
+
+body {
+	color: #000;
+	margin: 0;
+	font-size: 18px;
+	font-family: 'Barlow', sans-serif;
+	line-height: 1.6;
+	background: url('../images/sheets.jpg');
+	background-size: cover;
+	background-repeat: no-repeat;
+	margin-bottom: 40px;
+}
+
+#wrapper {
+	margin: 0 auto;
+	max-width: 800px;
+	padding: 0 30px;
+}
+
+.article {
+	position: relative;
+	width: 700px;
+	overflow: hidden;
+	background-color: white;
+	padding: 2px 0;
+}
+
+.article div {
+	background-color: rgba(0,0,0,0.1);
+}
+
+.box {
+	float: right;
+	width: 150px;
+	border: solid black 3px;
+	padding: 10px;
+	margin: 20px;
+}
+
+.masthead {
+	width: 300px;
+	border: solid black 3px;
+	padding: 10px;
+	margin: 20px;
+}
+
+.half, .second-half{
+	width: 50%;
+}
+
+.half{
+	float: left;
+}
+
+.second-half{
+	float: right;
+	color: blue;
+}
