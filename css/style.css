@@ -40,7 +40,7 @@ h4 {
 }
 
 .grid div {
-	background-color: rgba(0,0,0,0.1);
+	/*background-color: rgba(0,0,0,0.04);*/
 }
 
 #logo a {
@@ -73,11 +73,11 @@ text-decoration: none;
 display: inline-block; 
 width: 100%; 
 text-align: center; 
-transition: color .3s ease-in-out;
 }
 
-#nav a:hover { 
-  color: lavender;
+#nav a:hover .highlight { 
+  background-color: lavender;
+  transition: background-color .4s ease-in-out;
 }
 
 #nav.active {
@@ -131,7 +131,7 @@ transition: color .3s ease-in-out;
   .hamburger.is-active .hamburger-inner,
   .hamburger.is-active .hamburger-inner::before,
   .hamburger.is-active .hamburger-inner::after {
-    background-color: blue; }
+    background-color: black; }
 
 .hamburger-box {
   width: 24px;
@@ -146,7 +146,7 @@ transition: color .3s ease-in-out;
   .hamburger-inner, .hamburger-inner::before, .hamburger-inner::after {
     width: 24px;
     height: 2px;
-    background-color: red;
+    background-color: black;
     border-radius: 0px;
     position: absolute;
     transition-property: transform;
@@ -192,7 +192,8 @@ transition: color .3s ease-in-out;
 	max-width: 1000px;
 }
 
-#work h3 {
+#work h3, #writing h3 {
+	letter-spacing: 1px;
 	margin-bottom: 2rem;
 }
 
@@ -241,7 +242,26 @@ transition: color .3s ease-in-out;
   height: 100%;
 }
 
+.highlight-yel {
+	background-color: lightyellow;
+}
+
+/* FOOTER */
+#footer {
+	text-align: center;
+	font-size: .85rem;
+}
+
+
 /* RESPONSIVE */
+
+@media all and (max-width: 899px) {
+	#intro-holder h1 {
+		font-size: 3.2rem;
+	}
+}
+
+@media all and (min-width: 900px) {  }
 
 @media all and (max-width: 699px) {
 	#nav-button {
@@ -262,19 +282,13 @@ transition: color .3s ease-in-out;
 	.work-item .inner .work-inside {
 		opacity: 1;
 	}
-}
 
-@media all and (min-width: 700px) {
-}
-
-@media all and (max-width: 899px) {
 	#intro-holder h1 {
-		font-size: 3.2rem;
+		font-size: 2.8rem;
 	}
 }
 
-@media all and (min-width: 900px) {
-}
+@media all and (min-width: 700px) {  }
 
 /* for variable type sizing */
 @media screen and (min-width: 320px) {
