@@ -1,10 +1,16 @@
-body {
+/* .home {
+	background: url('../images/lavender-background-ext.jpg');
+	background-size: cover;
+	background-repeat: no-repeat;
+} */
+
+html {
 	background-color: white;
 	color: #333;
 	font-family: 'Roboto', sans-serif;
 }
 
-::selection{
+::selection {
 	background-color: lightyellow;
 }
 
@@ -342,13 +348,51 @@ text-align: center;
 	height: auto;
 }
 
+/* CONTACT */
+
+input[type=text], select, textarea {
+  width: 100%; /* Full width */
+  padding: 12px; /* Some padding */ 
+  border: 1px solid #ccc; /* Gray border */
+  border-radius: 4px; /* Rounded borders */
+  box-sizing: border-box; /* Make sure that padding and width stays in place */
+  margin-top: 6px; /* Add a top margin */
+  margin-bottom: 16px; /* Bottom margin */
+  resize: vertical /* Allow the user to vertically resize the textarea (not horizontally) */
+}
+
+/* Style the submit button with a specific background color etc */
+input[type=submit] {
+  background-color: #333;
+  color: white;
+  padding: 12px 20px;
+  border: none;
+  border-radius: 10px;
+  cursor: pointer;
+  font-family: 'Roboto', sans-serif;
+}
+
+/* When moving the mouse over the submit button, add a darker green color */
+input[type=submit]:hover {
+  background-color: lightyellow;
+  color: #333;
+}
+
+input {
+	font-family: 'Roboto', sans-serif;
+}
+
+textarea {
+	font-family: 'Roboto', sans-serif;
+	background-color: lavender;
+}
+
 /* FOOTER */
 #footer {
 	text-align: center;
 	font-size: .85rem;
 	color: #777;
 }
-
 
 /* RESPONSIVE */
 

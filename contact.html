@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html>
+<html class="home">
 	<head>
 		<meta name="keywords" content="design, html, css, frontend, developer, designer, portfolio">
 		<meta name="description" content="Personal Website of Rebecca Colao">
@@ -57,9 +57,21 @@
 
 					<div id="writings-holder" class="grid">
 
-						<div class="width-12-12-m width-9-12 writing-item">
-							<h2>Contact</h2>
-							<p>If I want you to contact me, you already know how. Just kidding I just don't really want my info on the internet??? Here's my <a href="https://www.instagram.com/the_earth_without_eh/" target="blank"><b>Instagram</b></a>.</p>
+						<div class="width-12-12-m width-6-12 writing-item">
+							<form action="action_page.php">
+
+							    <label for="fname"><b>Your Name</b></label>
+							    <input type="text" id="fname" name="firstname" placeholder="Your name...">
+
+							    <label for="lname"><b>How should I contact you?</b></label>
+							    <input type="text" id="lname" name="lastname" placeholder="Your email, phone, or social media...">
+
+							    <label for="subject"><b>Message</b></label>
+							    <textarea id="subject" name="subject" placeholder="What's up?" style="height:200px"></textarea>
+
+							    <input type="submit" value="SUBMIT">
+
+							  </form>
 						</div>
 					</div>
 				</div>
